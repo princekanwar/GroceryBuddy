@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:iconTint="@android:color/white"
+            android:title="@string/profile">
+        </item>
+        <item android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_payment"
+            android:iconTint="@android:color/white"
+            android:title="@string/payment">
+        </item>
+        <item android:id="@+id/nav_order"
+            android:icon="@drawable/ic_order"
+            android:iconTint="@android:color/white"
+            android:title="Cart">
+        </item>
+        <item android:id="@+id/nav_orders"
+            android:icon="@drawable/orders"
+            android:iconTint="@android:color/white"
+            android:title="Orders">
+        </item>
+        <item android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:iconTint="@android:color/white"
+            android:title="Settings">
+        </item>
+        <item android:id="@+id/nav_category"
+            android:icon="@drawable/category"
+            android:iconTint="@android:color/white"
+            android:title="Category">
+        </item>
+        <item android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_delivery"
+            android:iconTint="@android:color/white"
+            android:title="Delivery Details">
+        </item>
+        <item android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+            android:iconTint="@android:color/white"
+                android:title="Logout"/>
+
+</menu>

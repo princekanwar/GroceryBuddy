@@ -1,0 +1,55 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                tools:context=".MapsActivity" />
+
+                <Button
+                    android:id="@+id/btnNearStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/map"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/btn_rectangle_pink"
+                    android:text="Find nearest grocery store!!"
+                    android:textColor="@color/colorText" />
+
+            <Button
+                android:id="@+id/btnMyLocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="20dp"
+                android:layout_below="@+id/btnNearStore"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_rectangle_pink"
+                android:text="Find From Another Location(With PostalCode)"
+                android:textAlignment="center"
+                android:textColor="@color/colorText" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

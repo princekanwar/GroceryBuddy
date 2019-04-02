@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Grocery Buddy</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="profile">Profile</string>
+    <string name="payment">Payment</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="can_not_create">Can not create new account!!</string>
+    <string name="invalid_account">Invalid account!!</string>
+    <string name="username_exist">Username Exists!!</string>
+    <string name="save">Save</string>
+    <string name="welcome">Welcome </string>
+    <string name="change_profile">Change Profile</string>
+    <string name="failed">Failed</string>
+    <string name="title_activity_view_direction">Map</string>
+    <string name="key">AIzaSyC_KCAEC5okDT6rZyXWEWAW3-BviWMdaso</string>
+    <string name="track_me">Track Me!</string>
+</resources>

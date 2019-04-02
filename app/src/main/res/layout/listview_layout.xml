@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imgGrocerryImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.11"
+
+            />
+
+        <TextView
+            android:id="@+id/txtGrocerryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/imgGrocerryImage"
+            android:layout_toRightOf="@id/imgGrocerryImage"
+            android:textColor="#333"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtGroceryDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtGrocerryName"
+            android:layout_toEndOf="@id/imgGrocerryImage"
+            android:layout_toRightOf="@id/imgGrocerryImage"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:textColor="#333" />
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/ic_cart"
+            android:layout_weight="1"/>
+    </RelativeLayout>
+
+</LinearLayout>

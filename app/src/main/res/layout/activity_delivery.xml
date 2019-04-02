@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edtDestination"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:hint="Destination"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_destination"
+        android:layout_centerInParent="true"
+
+        />
+
+    <EditText
+        android:id="@+id/edtDistance"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/edtDestination"
+        android:layout_marginTop="140dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:hint="Distance(In K.m.)"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_distance"
+        android:layout_centerInParent="true"
+
+        />
+
+
+    <EditText
+        android:id="@+id/edtEstimatedPrice"
+        android:layout_below="@id/edtDistance"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:hint="Estimated Price in CAD($)"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_dollar"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/btn_rectangle_pink"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Map"
+        android:textColor="#ffffff"
+        android:layout_below="@id/edtEstimatedPrice"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:onClick="pay"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/btn_rectangle_pink"
+        android:text="Confirm"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_below="@id/btnMap"/>
+
+        <TextView
+            android:id="@+id/m_response"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="480dp"
+            android:background="@drawable/btn_rectangle_pink"
+            android:text="Paypal Response"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:layout_below="@id/btnConfirm"/>
+    </RelativeLayout>
+</ScrollView>

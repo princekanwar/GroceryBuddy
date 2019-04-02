@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignUpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etUsernamesignUP"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_person"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:hint="User Name"
+        android:textColorHint="@color/colorText"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/etPasswordsignUP"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etUsernamesignUP"
+            android:layout_alignStart="@+id/etUsernamesignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="86dp"
+            android:layout_marginBottom="20dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_cvv"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorText"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/etFnamesignUP"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etPasswordsignUP"
+            android:layout_alignStart="@+id/etUsernamesignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="158dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorText"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+
+        <EditText
+            android:id="@+id/etLnamesignUP"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etFnamesignUP"
+            android:layout_alignStart="@+id/etUsernamesignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="232dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_person"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorText"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etemailsignUP"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etLnamesignUP"
+            android:layout_alignStart="@+id/etUsernamesignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="302dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="Email"
+
+            android:inputType="textEmailAddress"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/colorText"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etNumbersignUP"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/etemailsignUP"
+            android:layout_alignStart="@+id/etUsernamesignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="376dp"
+            android:background="#11000000"
+            android:drawableLeft="@drawable/ic_phone"
+            android:hint="Cell Number"
+            android:textColorHint="@color/colorText"
+            android:inputType="phone"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btnSaveSignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etNumbersignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="467dp"
+            android:background="@drawable/btn_rectangle_pink"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnCancelsignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSaveSignUP"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="534dp"
+            android:background="@drawable/btn_rectangle_pink"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/etCardNumber"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="615dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_payment"
+        android:ems="10"
+        android:maxLength="16"
+        android:paddingLeft="5dp"
+        android:hint="Card Number"
+        android:textColorHint="@color/colorText"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/etCvvNumber"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="555dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_cvv"
+        android:ems="10"
+        android:maxLength="3"
+        android:hint="Card Number"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/colorText"
+        android:inputType="numberPassword"
+        android:textColor="#ffffff" />
+
+
+    <EditText
+        android:id="@+id/etExpiry"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="495dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_expiry"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:hint="Expiry Date(Month/Year)"
+        android:textColorHint="@color/colorText"
+        android:inputType="number|date"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSaveCard"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_rectangle_pink"
+        android:text="Save Details"
+        android:layout_marginBottom="370dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
