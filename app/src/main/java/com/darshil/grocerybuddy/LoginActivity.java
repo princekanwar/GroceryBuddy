@@ -30,7 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 import org.w3c.dom.Text;
 
 public class LoginActivity extends AppCompatActivity {
-
+//Hello
     TextView signUp,logo;
     EditText uName,pass;
     Button login;
