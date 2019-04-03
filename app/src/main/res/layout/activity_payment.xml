@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/etCardNumber"
@@ -16,12 +15,12 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_payment"
         android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPersonName"
         android:maxLength="16"
         android:paddingLeft="5dp"
-        android:hint="Card Number"
-        android:textColorHint="@color/colorText"
-        android:inputType="textPersonName"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textColorHint="@color/colorText" />
 
     <EditText
         android:id="@+id/etCvvNumber"
@@ -33,12 +32,12 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_cvv"
         android:ems="10"
-        android:maxLength="3"
         android:hint="Card Number"
-        android:paddingLeft="5dp"
-        android:textColorHint="@color/colorText"
         android:inputType="numberPassword"
-        android:textColor="#ffffff" />
+        android:maxLength="3"
+        android:paddingLeft="5dp"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/colorText" />
 
 
     <EditText
@@ -51,11 +50,11 @@
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_expiry"
         android:ems="10"
-        android:paddingLeft="5dp"
         android:hint="Expiry Date(Month/Year)"
-        android:textColorHint="@color/colorText"
         android:inputType="number|date"
-        android:textColor="#ffffff" />
+        android:paddingLeft="5dp"
+        android:textColor="#ffffff"
+        android:textColorHint="@color/colorText" />
 
     <Button
         android:id="@+id/btnSaveCard"
@@ -63,9 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
+        android:layout_marginBottom="370dp"
         android:background="@drawable/btn_rectangle_pink"
         android:text="Save Details"
-        android:layout_marginBottom="370dp"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 

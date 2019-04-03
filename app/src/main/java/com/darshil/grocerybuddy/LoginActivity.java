@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
@@ -29,6 +30,7 @@ import com.google.firebase.database.ValueEventListener;
 import org.w3c.dom.Text;
 
 public class LoginActivity extends AppCompatActivity {
+
     TextView signUp,logo;
     EditText uName,pass;
     Button login;
@@ -165,32 +167,32 @@ public class LoginActivity extends AppCompatActivity {
         } );
     }
 
-    public void login_onClick(View v) {
-        AccountDB accountDB = new AccountDB( getApplicationContext() );
-        String username = uName.getText().toString();
-        String password = pass.getText().toString();
-        Account account = accountDB.login( username, password );
-        if(account == null)
-        {
-            AlertDialog.Builder builder = new AlertDialog.Builder( v.getContext() );
-            builder.setTitle( R.string.error );
-            builder.setMessage( R.string.invalid_account );
-            builder.setPositiveButton( R.string.ok, new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-                }
-            } );
-            builder.show();
-
-        }
-        else
-        {
-            Intent io = new Intent( LoginActivity.this,MainActivity.class );
-            io.putExtra( "account",account );
-            startActivity( io );
-        }
-    }
+//    public void login_onClick(View v) {
+//        AccountDB accountDB = new AccountDB( getApplicationContext() );
+//        String username = uName.getText().toString();
+//        String password = pass.getText().toString();
+//        Account account = accountDB.login( username, password );
+//        if(account == null)
+//        {
+//            AlertDialog.Builder builder = new AlertDialog.Builder( v.getContext() );
+//            builder.setTitle( R.string.error );
+//            builder.setMessage( R.string.invalid_account );
+//            builder.setPositiveButton( R.string.ok, new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    dialog.cancel();
+//                }
+//            } );
+//            builder.show();
+//
+//        }
+//        else
+//        {
+//            Intent io = new Intent( LoginActivity.this,MainActivity.class );
+//            io.putExtra( "account",account );
+//            startActivity( io );
+//        }
+//    }
 
 
 

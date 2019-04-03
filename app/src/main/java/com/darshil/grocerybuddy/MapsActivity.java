@@ -96,7 +96,7 @@ GoogleMap.OnMarkerDragListener{
                         addressList = geocoder.getFromLocationName( getAdd,1 );
                         if(addressList != null)
                         {
-                                userAddress = addressList.get( 1 );
+                                userAddress = addressList.get( 0 );
                                 LatLng latLng = new LatLng( userAddress.getLatitude(),userAddress.getLongitude() );
                                 userMarkerOptions.position( latLng );
                                 userMarkerOptions.title( getAdd );

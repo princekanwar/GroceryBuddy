@@ -173,9 +173,9 @@ public class SignUpActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText( SignUpActivity.this, "This "+scontact+ "alreat Exists!", Toast.LENGTH_SHORT ).show();
+                    Toast.makeText( SignUpActivity.this, "This "+scontact+ "already Exists!", Toast.LENGTH_SHORT ).show();
                     loadingBar.dismiss();
-                    Toast.makeText( SignUpActivity.this, "Please try anothr number to sign in!!", Toast.LENGTH_SHORT ).show();
+                    Toast.makeText( SignUpActivity.this, "Please try another number to sign in!!", Toast.LENGTH_SHORT ).show();
                     Intent io = new Intent( SignUpActivity.this,LoginActivity.class );
                     startActivity( io );
                 }

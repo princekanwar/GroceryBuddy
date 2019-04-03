@@ -99,7 +99,7 @@ public class ViewDirection extends FragmentActivity implements OnMapReadyCallbac
         place1.icon( BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW) );
         currentLocationMarker = mMap.addMarker( place1 );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng) );
-        mMap.animateCamera( CameraUpdateFactory.zoomBy( 10 ) );
+        mMap.animateCamera( CameraUpdateFactory.zoomTo( 10 ) );
 
 
         if (client != null)
@@ -114,7 +114,7 @@ public class ViewDirection extends FragmentActivity implements OnMapReadyCallbac
                 .icon( BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN) );
         DestMarker = mMap.addMarker( place2 );
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng) );
-        mMap.animateCamera( CameraUpdateFactory.zoomBy( 10 ) );
+        mMap.animateCamera( CameraUpdateFactory.zoomTo( 10 ) );
         String url = getUrl(currentLocationMarker.getPosition(),DestMarker.getPosition(),"driving");
         new FetchURL( ViewDirection.this ).execute( url,"driving" );
 
