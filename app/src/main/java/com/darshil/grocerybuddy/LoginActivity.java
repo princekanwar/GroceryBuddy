@@ -31,6 +31,7 @@ import org.w3c.dom.Text;
 
 public class LoginActivity extends AppCompatActivity {
 //Hello
+    //well Its nice to test on Github
     TextView signUp,logo;
     EditText uName,pass;
     Button login;
