@@ -20,7 +20,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         Milk = (ImageView) findViewById( R.id.I_Milk );
         Spices = (ImageView) findViewById( R.id.I_Spices );
         Dairy = (ImageView) findViewById( R.id.I_Dairy );
-
+        //Toast 
         Veg.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
